@@ -1,6 +1,8 @@
 @import "_reset";
 @import "_variables";
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800,Cousine:400&display=swap"); //TODO: Make them local
+
 html {
   width: 100%;
   height: 100%;
@@ -13,11 +15,11 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 768px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
 .main {
-  margin-top: 80px; //TODO: fix the overlap
+  margin-top: 90px; //TODO: fix the overlap
 }

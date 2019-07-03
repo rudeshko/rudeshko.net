@@ -1,6 +1,8 @@
+@import "_variables";
+
 #terminal {
   width: 100%;
-  height: 360px;
+  height: 450px;
   background: #333;
   border-radius: 7px; //TODO: mixin
   overflow: hidden;
@@ -8,14 +10,15 @@
 
   .heading {
     width: 100%;
-    height: 35px;
+    height: 38px;
     background: #222;
+    display: flex;
 
     .controls {
       height: 100%;
-      display: flex;
       padding: 0 10px;
       align-items: center;
+      display: flex;
 
       div {
         width: 11px;
@@ -26,34 +29,68 @@
           margin-right: 8px;
         }
 
+        //TODO: Convert these into a function like getButton('red');
         &.red {
-          background: #ef4300;
+          background: $color-red;
+
+          &:hover {
+            background: lighten($color-red, 10%);
+            cursor: pointer;
+          }
         }
 
         &.orange {
-          background: #f1ac00;
+          background: $color-orange;
+
+          &:hover {
+            background: lighten($color-orange, 10%);
+            cursor: pointer;
+          }
         }
 
         &.green {
-          background: #98df00;
+          background: $color-green;
+
+          &:hover {
+            background: lighten($color-green, 10%);
+            cursor: pointer;
+          }
         }
       }
+    }
+
+    .title {
+      height: 38px;
+      line-height: 38px;
+      color: #555;
+      font-size: 13px;
+      text-align: center;
+      flex-grow: 1;
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); //TODO: mixin
+      padding-right: 70px;
     }
   }
 
   .content {
     padding: 12px 10px;
-    font-family: Consolas; //TODO:
     font-size: 14px;
     color: #fff;
-    line-height: 22px;
-
-    // .typed-cursor {
-    //   color: #fff;
-    //   opacity: 1;
-    // }
+    line-height: 24px;
+    font-family: 'Cousine', sans-serif;
 
     .step {
+      &.step3 {
+        font-size: 16px;
+        padding: 10px 15px 20px;
+        font-style: italic;
+      }
+
+      .tab {
+        display: inline-block;
+        width: 40px;
+      }
+
       .directory {
         color: #f1ac00;
       }
