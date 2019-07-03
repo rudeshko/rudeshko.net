@@ -1,0 +1,38 @@
+#header {
+  $header-height: 200px;
+  $header-offset: 50px;
+
+  width: 100%;
+  height: $header-height;
+  background: url('../images/header_bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: $header-offset;
+
+  .container {
+    height: $header-height + $header-offset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .profile_picture {
+      width: $header-height;
+      height: $header-height;
+      background: url('../images/dima.png') no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      border: 7px solid #fff; //TODO: make mixin
+      box-sizing: border-box;
+      margin: $header-offset 40px 0 0;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); //TODO: mixin
+    }
+
+    .profile_name {
+      height: $header-height;
+      font-size: 50px;
+      line-height: $header-height;
+      color: #fff;
+      margin-top: $header-offset;
+    }
+  }
+}

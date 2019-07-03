@@ -11,3 +11,13 @@ body {
   height: 100%;
   background-image: radial-gradient(#ffc600, #efa900);
 }
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.main {
+  margin-top: 80px; //TODO: fix the overlap
+}

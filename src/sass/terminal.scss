@@ -1,0 +1,67 @@
+#terminal {
+  width: 100%;
+  height: 360px;
+  background: #333;
+  border-radius: 7px; //TODO: mixin
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); //TODO: mixin
+
+  .heading {
+    width: 100%;
+    height: 35px;
+    background: #222;
+
+    .controls {
+      height: 100%;
+      display: flex;
+      padding: 0 10px;
+      align-items: center;
+
+      div {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%; //TODO: mixin
+
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+
+        &.red {
+          background: #ef4300;
+        }
+
+        &.orange {
+          background: #f1ac00;
+        }
+
+        &.green {
+          background: #98df00;
+        }
+      }
+    }
+  }
+
+  .content {
+    padding: 12px 10px;
+    font-family: Consolas; //TODO:
+    font-size: 14px;
+    color: #fff;
+    line-height: 22px;
+
+    // .typed-cursor {
+    //   color: #fff;
+    //   opacity: 1;
+    // }
+
+    .step {
+      .directory {
+        color: #f1ac00;
+      }
+
+      .branch {
+        color: #98df00;
+        font-style: italic;
+      }
+    }
+  }
+}
