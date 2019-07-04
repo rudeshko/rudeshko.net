@@ -23,7 +23,7 @@
       background-size: cover;
       border: 7px solid #fff;
       margin: $header-offset 30px 0 0;
-      @include box-shadow(0 3px 2px 1px rgba(0, 0, 0, 0.15));
+      @include box-shadow(0 3px 3px 1px rgba(0, 0, 0, 0.15));
       @include border-radius(50%);
     }
 

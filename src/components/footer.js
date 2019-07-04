@@ -8,10 +8,22 @@ const Footer = () => (
       <hr />
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/dimarudeshko/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a
+            href="https://www.linkedin.com/in/dimarudeshko/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </li>
         <li>
-          <a href="https://github.com/rudeshko" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a
+            href="https://github.com/rudeshko"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </li>
         <li>
           <a href="mailto:dima@rudeshko.net">Send me an Email!</a>
