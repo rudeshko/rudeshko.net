@@ -1,3 +1,5 @@
+@import "_variables";
+
 #header {
   $header-height: 200px;
   $header-offset: 55px;
@@ -19,11 +21,10 @@
       height: 200px;
       background: url('../images/dima.png') no-repeat;
       background-size: cover;
-      border-radius: 50%;
-      border: 7px solid #fff; //TODO: make mixin
-      box-sizing: border-box;
+      border: 7px solid #fff;
       margin: $header-offset 30px 0 0;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); //TODO: mixin
+      @include box-shadow(0 3px 2px 1px rgba(0, 0, 0, 0.15));
+      @include border-radius(50%);
     }
 
     .profile_name {
@@ -34,7 +35,7 @@
       line-height: $header-height;
       color: #fff;
       margin-top: $header-offset;
-      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); //TODO: mixin
+      text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
     }
   }
 }

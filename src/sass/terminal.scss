@@ -2,11 +2,13 @@
 
 #terminal {
   width: 100%;
-  height: 450px;
+  height: 460px;
   background: #333;
-  border-radius: 7px; //TODO: mixin
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); //TODO: mixin
+  display: flex;
+  flex-direction: column;
+  @include border-radius(7px);
+  @include box-shadow(0 3px 10px rgba(0, 0, 0, 0.15));
 
   .heading {
     width: 100%;
@@ -23,51 +25,27 @@
       div {
         width: 11px;
         height: 11px;
-        border-radius: 50%; //TODO: mixin
+        @include border-radius(50%);
 
         &:not(:last-child) {
           margin-right: 8px;
         }
 
-        //TODO: Convert these into a function like getButton('red');
-        &.red {
-          background: $color-red;
-
-          &:hover {
-            background: lighten($color-red, 10%);
-            cursor: pointer;
-          }
-        }
-
-        &.orange {
-          background: $color-orange;
-
-          &:hover {
-            background: lighten($color-orange, 10%);
-            cursor: pointer;
-          }
-        }
-
-        &.green {
-          background: $color-green;
-
-          &:hover {
-            background: lighten($color-green, 10%);
-            cursor: pointer;
-          }
-        }
+        @include terminal-control("red");
+        @include terminal-control("orange");
+        @include terminal-control("green");
       }
     }
 
     .title {
       height: 38px;
       line-height: 38px;
-      color: #555;
+      color: #656565;
       font-size: 13px;
       text-align: center;
       flex-grow: 1;
       font-family: 'Montserrat', sans-serif;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); //TODO: mixin
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
       padding-right: 70px;
     }
   }
@@ -78,17 +56,20 @@
     color: #fff;
     line-height: 24px;
     font-family: 'Cousine', sans-serif;
+    overflow: auto;
+    flex: 1;
 
     .step {
       &.step3 {
-        font-size: 16px;
-        padding: 10px 15px 20px;
+        font-size: 15.5px;
+        font-weight: 200;
+        padding: 20px 15px;
         font-style: italic;
       }
 
       .tab {
         display: inline-block;
-        width: 40px;
+        width: 30px;
       }
 
       .directory {

@@ -1,5 +1,4 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
 
 import "../sass/footer.scss";
 
@@ -9,17 +8,17 @@ const Footer = () => (
       <hr />
       <ul>
         <li>
-          <Link to="/">LinkedIn</Link>
+          <a href="https://www.linkedin.com/in/dimarudeshko/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </li>
         <li>
-          <Link to="/">GitHub</Link>
+          <a href="https://github.com/rudeshko" target="_blank" rel="noopener noreferrer">GitHub</a>
         </li>
         <li>
-          <Link to="/">Say Hi!</Link>
+          <a href="mailto:dima@rudeshko.net">Send me an Email!</a>
         </li>
       </ul>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

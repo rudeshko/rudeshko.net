@@ -1,3 +1,29 @@
-$color-red: #ef4300;
-$color-orange: #f1ac00;
-$color-green: #98df00;
+$colorMap: (
+  "red": #ef4300,
+  "orange": #f1ac00,
+  "green": #98df00
+);
+
+@mixin box-shadow ($value) {
+  box-shadow: $value;
+  -moz-box-shadow: $value;
+  -webkit-box-shadow: $value;
+}
+
+@mixin border-radius ($value) {
+  border-radius: $value;
+  -moz-border-radius: $value;
+  -webkit-border-radius: $value;
+}
+
+@mixin terminal-control ($name) {
+  &.#{$name} {
+    background: map-get($colorMap, $name);
+
+    &:hover {
+      background: lighten(map-get($colorMap, $name), 15%);
+      border: 1px solid lighten(map-get($colorMap, $name), 50%);
+      cursor: pointer;
+    }
+  }
+}

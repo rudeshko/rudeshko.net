@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import "../sass/header.scss"
+import "../sass/header.scss";
 
 const Header = () => (
   <header id="header">
@@ -9,6 +9,6 @@ const Header = () => (
       <div className="profile_name">Dima Rudeshko</div>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;

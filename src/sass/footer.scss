@@ -1,4 +1,6 @@
 #footer {
+  padding-bottom: 30px;
+
   .container {
     hr {
       height: 0;
@@ -20,9 +22,9 @@
           font-family: 'Montserrat', sans-serif;
           font-weight: 400;
           font-size: 14px;
-          color: #333;
+          color: #222;
           text-decoration: none;
-          text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); //TODO: mixin
+          text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.15);
 
           &:hover {
             text-decoration: underline;

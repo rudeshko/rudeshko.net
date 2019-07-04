@@ -1,7 +1,7 @@
 @import "_reset";
 @import "_variables";
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800,Cousine:400&display=swap"); //TODO: Make them local
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800,Cousine:400");
 
 html {
   width: 100%;
@@ -11,7 +11,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(#ffc600, #efa900);
+  background-image: radial-gradient(#ffc600 25%, #efa900);
 }
 
 .container {
