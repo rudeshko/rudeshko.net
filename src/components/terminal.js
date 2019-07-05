@@ -55,7 +55,7 @@ const Terminal = () => {
   }, []);
 
   return (
-    <div id="terminal" className={loaded ? 'visible' : ''}>
+    <div id="terminal" className={loaded ? "visible" : ""}>
       <div className="heading">
         <div className="controls">
           <div className="red"></div>

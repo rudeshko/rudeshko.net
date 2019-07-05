@@ -8,6 +8,7 @@
       border-top: 1px solid #ffc600;
       border-bottom: 1px solid #efa900;
       margin: 25px 0;
+      @include border-radius(50%);
     }
 
     ul {
