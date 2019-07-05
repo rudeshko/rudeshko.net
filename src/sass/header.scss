@@ -20,11 +20,16 @@
       width: 200px;
       height: 200px;
       background: url('../images/dima.png') no-repeat;
+      background-position: center;
       background-size: cover;
       border: 7px solid #fff;
       margin-top: $header-offset;
       @include box-shadow(0 3px 3px 1px rgba(0, 0, 0, 0.15));
       @include border-radius(50%);
+
+      &:hover {
+        background-size: 110%;
+      }
     }
 
     .profile_name {
