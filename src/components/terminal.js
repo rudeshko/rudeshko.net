@@ -23,6 +23,7 @@ const Terminal = () => {
       });
     });
   const [step, setStep] = useState(0);
+  const [loaded, setLoaded] = useState(false);
   const [bio] = useState(`
     <span class="tab"></span>Hello, and welcome to my website! My name is Dima, and I am a Full Stack Software Developer with 12+ years of experience in computer programming.
     I am very passionate about web development and working on the latest and greatest technologies such as React, NodeJS, GraphQL, as well as cloud computing and architecture using Microservices and CICD pipelines.
@@ -34,6 +35,8 @@ const Terminal = () => {
   `);
 
   const animateTerminal = async () => {
+    setLoaded(true);
+    await delay(500);
     setStep(1);
     await delay(500);
     await animateCommand(".command-step1", "cd ./rudeshko.net");
@@ -52,7 +55,7 @@ const Terminal = () => {
   }, []);
 
   return (
-    <div id="terminal">
+    <div id="terminal" className={loaded ? 'visible' : ''}>
       <div className="heading">
         <div className="controls">
           <div className="red"></div>

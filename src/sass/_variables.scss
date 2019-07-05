@@ -16,13 +16,25 @@ $colorMap: (
   -webkit-border-radius: $value;
 }
 
+@mixin transition ($value) {
+  transition: $value;
+  -moz-transition: $value;
+  -webkit-transition: $value;
+}
+
+@mixin transform ($value) {
+  transform: $value;
+  -moz-transform: $value;
+  -webkit-transform: $value;
+}
+
 @mixin terminal-control ($name) {
   &.#{$name} {
     background: map-get($colorMap, $name);
 
     &:hover {
       background: lighten(map-get($colorMap, $name), 15%);
-      border: 1px solid lighten(map-get($colorMap, $name), 50%);
+      border: 1px solid lighten(map-get($colorMap, $name), 25%); //TODO: Revisit this
       cursor: pointer;
     }
   }

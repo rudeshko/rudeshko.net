@@ -7,8 +7,16 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  @include transition(all 0.5s ease-in-out);
+  @include transform(scale(0.8));
   @include border-radius(7px);
-  @include box-shadow(0 3px 10px rgba(0, 0, 0, 0.15));
+  @include box-shadow(0 3px 25px rgba(255, 255, 255, 0.25));
+
+  &.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
 
   .heading {
     width: 100%;
@@ -52,16 +60,17 @@
 
   .content {
     padding: 12px 10px;
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     line-height: 24px;
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Roboto Mono', sans-serif; //TODO: Does not work the same on Windows :/
+    font-family: 400;
     overflow: auto;
     flex: 1;
 
     .step {
       &.step3 {
-        font-size: 15.5px;
+        font-size: 16px;
         font-weight: 200;
         padding: 20px 15px;
         font-style: italic;

@@ -2,7 +2,7 @@
 
 #header {
   $header-height: 200px;
-  $header-offset: 55px;
+  $header-offset: 50px;
 
   width: 100%;
   height: $header-height;
@@ -12,7 +12,7 @@
   margin-bottom: $header-offset;
 
   .container {
-    height: $header-height + $header-offset;
+    height: $header-height;
     display: flex;
     justify-content: center;
 
@@ -22,20 +22,21 @@
       background: url('../images/dima.png') no-repeat;
       background-size: cover;
       border: 7px solid #fff;
-      margin: $header-offset 30px 0 0;
+      margin-top: $header-offset;
       @include box-shadow(0 3px 3px 1px rgba(0, 0, 0, 0.15));
       @include border-radius(50%);
     }
 
     .profile_name {
-      height: $header-height;
+      display: flex;
+      align-items: flex-end;
       font-family: "Montserrat", sans-serif;
       font-weight: 800;
       font-size: 45px;
-      line-height: $header-height;
       color: #fff;
-      margin-top: $header-offset;
       text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+      margin-left: 30px;
+      padding-bottom: 20px;
     }
   }
 }
