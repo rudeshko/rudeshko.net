@@ -57,6 +57,7 @@ const Terminal = () => {
     setLoaded(false);
     await delay(1000);
     setStep(0);
+    setMinimized(false);
     animateTerminal();
   };
 
