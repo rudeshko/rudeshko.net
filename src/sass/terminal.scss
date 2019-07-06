@@ -1,6 +1,8 @@
 @import "_variables";
 
 #terminal {
+  $title-height: 38px;
+
   width: 100%;
   height: 460px;
   background: #333;
@@ -8,7 +10,7 @@
   display: flex;
   flex-direction: column;
   opacity: 0;
-  @include transition(all 0.5s ease-in-out);
+  @include transition(#{'transform 0.5s ease-in-out, opacity 0.5s ease-in-out'});
   @include transform(scale(0.8));
   @include border-radius(7px);
   @include box-shadow(0 3px 25px rgba(255, 255, 255, 0.25));
@@ -16,6 +18,24 @@
   &.visible {
     opacity: 1;
     transform: scale(1);
+  }
+
+  &.minimized {
+    height: $title-height;
+
+    .content {
+      display: none;
+    }
+  }
+
+  &.fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include transition(all 0s);
+    @include border-radius(0);
   }
 
   .heading {
@@ -40,13 +60,13 @@
         }
 
         @include terminal-control("red");
-        @include terminal-control("orange");
+        @include terminal-control("yellow");
         @include terminal-control("green");
       }
     }
 
     .title {
-      height: 38px;
+      height: $title-height;
       line-height: 38px;
       color: #656565;
       font-size: 13px;
@@ -64,7 +84,7 @@
     color: #fff;
     line-height: 24px;
     font-family: 'Roboto Mono', sans-serif;
-    font-family: 400;
+    font-weight: 400;
     overflow: auto;
     flex: 1;
 

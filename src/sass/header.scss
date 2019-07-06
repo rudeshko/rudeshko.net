@@ -10,11 +10,23 @@
   background-size: cover;
   background-position: top center;
   margin-bottom: $header-offset;
+  @include box-shadow(0 3px 25px rgba(255, 255, 255, 0.25));
+
+  @include media($mobile-width) {
+    height: auto;
+    margin-bottom: 0;
+  }
 
   .container {
     height: $header-height;
     display: flex;
     justify-content: center;
+
+    @include media($mobile-width) {
+      height: auto;
+      align-items: center;
+      flex-direction: column;
+    }
 
     .profile_picture {
       width: 200px;
@@ -26,6 +38,10 @@
       margin-top: $header-offset;
       @include box-shadow(0 3px 3px 1px rgba(0, 0, 0, 0.15));
       @include border-radius(50%);
+
+      @include media($mobile-width) {
+        margin-top: 15px;
+      }
 
       &:hover {
         background-size: 110%;
@@ -43,10 +59,21 @@
       margin-left: 30px;
       padding-bottom: 15px;
 
+      @include media($mobile-width) {
+        margin: 15px 0;
+        align-self: auto;
+        text-align: center;
+        padding-bottom: 0;
+      }
+
       .subheading {
         font-size: 14px;
         font-weight: 300;
         padding: 2px;
+
+        @include media($mobile-width) {
+          padding: 0;
+        }
       }
     }
   }

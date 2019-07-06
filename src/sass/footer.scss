@@ -1,7 +1,11 @@
 @import "_variables";
 
 #footer {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  @include media($mobile-width) {
+    margin-bottom: 15px;
+  }
 
   .container {
     hr {
@@ -11,15 +15,25 @@
       border-bottom: 1px solid #efa900;
       margin: 25px 0;
       @include border-radius(50%);
+      @include box-shadow(0 0px 25px rgba(255, 255, 255, 0.5));
     }
 
     ul {
       list-style-type: none;
       display: flex;
       justify-content: center;
+      align-items: center;
+
+      @include media($mobile-width) {
+        flex-direction: column;
+      }
 
       li {
         padding: 0 15px;
+
+        @include media($mobile-width) {
+          padding: 15px 0;
+        }
 
         a {
           font-family: 'Montserrat', sans-serif;

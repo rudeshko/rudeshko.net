@@ -1,8 +1,10 @@
 $colorMap: (
-  "red": #ef4300,
-  "orange": #f1ac00,
+  "red": #ff4b04,
+  "yellow": #ffc602,
   "green": #98df00
 );
+
+$mobile-width: 767px;
 
 @mixin box-shadow ($value) {
   box-shadow: $value;
@@ -26,6 +28,12 @@ $colorMap: (
   transform: $value;
   -moz-transform: $value;
   -webkit-transform: $value;
+}
+
+@mixin media ($value) {
+  @media only screen and (max-width: $value) {
+    @content;
+  }
 }
 
 @mixin terminal-control ($name) {

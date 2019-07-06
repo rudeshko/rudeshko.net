@@ -18,8 +18,16 @@ body {
   width: 768px;
   margin: 0 auto;
   padding: 0 25px;
+
+  @include media($mobile-width) {
+    width: 100%;
+  }
 }
 
 .main {
-  margin-top: 90px; //TODO: fix the overlap
+  margin-top: 90px;
+
+  @include media($mobile-width) {
+    margin-top: 30px;
+  }
 }
