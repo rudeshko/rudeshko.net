@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Typed from "typed.js";
 
 import "../sass/terminal.scss";
@@ -9,17 +9,15 @@ const Terminal = () => {
   const [loaded, setLoaded] = useState(false);
   const [minimized, setMinimized] = useState(false);
   const [fullScreen, setFullScreen] = useState(false);
-  // const [customInput, setCustomInput] = useState("");
   const [bio] = useState(`
     <span class="tab"></span>Hello, and welcome to my website! My name is Dima, and I am a Full Stack Software Developer with 12+ years of experience in computer programming.
     I am very passionate about web development and working with the latest and greatest technologies such as React, NodeJS, GraphQL, as well as cloud computing and architecture using Microservices and CICD pipelines.
     <br />
-    <span class="tab"></span>You can get in touch with me, and find out more about what I do by clicking on the links below :)
+    <span class="tab"></span>If you like what I do, you can learn more about me by visiting the links below, or <a href="mailto:dima@rudeshko.net">send me an email!</a> :)
     <br />
     <br />
     <span class="tab"></span>&ndash; Dima
   `);
-  const customInputRef = useRef();
 
   // Methods TODO: Add comments (jsdoc)
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -48,7 +46,6 @@ const Terminal = () => {
     setStep(4);
     await resetCursor(".command-step4");
     setIsTyping(false);
-    // customInputRef.current.focus(); //TODO: Make the custom command editable
   };
 
   const controlClose = async () => {
@@ -76,7 +73,7 @@ const Terminal = () => {
   }, []);
 
   const animateCommand = (className, command, autoHideCursor = true) =>
-    new Promise((resolve, reject) => {
+    new Promise(resolve => {
       new Typed(className, {
         strings: [command],
         typeSpeed: 60,
@@ -129,7 +126,7 @@ const Terminal = () => {
           <div className="step step4">
             dima@rudeshko.net: <span className="directory">~/rudeshko.net</span>{" "}
             <span className="branch">(master)</span> ${" "}
-            <span className="command-step4" ref={customInputRef}></span>
+            <span className="command-step4"></span>
           </div>
         )}
       </div>

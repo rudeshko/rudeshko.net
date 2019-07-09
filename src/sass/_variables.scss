@@ -3,7 +3,8 @@ $colorMap: (
   "yellow": #ffc602,
   "green": #98df00
 );
-
+$yellow: #ffc600;
+$yellow_dark: darken(saturate($yellow, 100%), 10%);
 $mobile-width: 767px;
 
 @mixin box-shadow ($value) {

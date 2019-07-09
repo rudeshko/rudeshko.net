@@ -11,8 +11,8 @@
     hr {
       height: 0;
       border: none;
-      border-top: 1px solid #ffc600;
-      border-bottom: 1px solid #efa900;
+      border-top: 1px solid $yellow;
+      border-bottom: 1px solid $yellow_dark;
       margin: 25px 0;
       @include border-radius(50%);
       @include box-shadow(0 0px 25px rgba(255, 255, 255, 0.5));

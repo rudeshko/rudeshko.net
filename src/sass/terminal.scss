@@ -94,6 +94,14 @@
         font-weight: 200;
         padding: 20px 15px;
         font-style: italic;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
       }
 
       .tab {
@@ -108,6 +116,11 @@
       .branch {
         color: #98df00;
         font-style: italic;
+      }
+
+      .command-step4 {
+        outline: none;
+        caret-color: transparent;
       }
     }
   }

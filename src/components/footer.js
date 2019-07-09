@@ -25,9 +25,6 @@ const Footer = () => (
             GitHub
           </a>
         </li>
-        <li>
-          <a href="mailto:dima@rudeshko.net">Send me an Email!</a>
-        </li>
       </ul>
     </div>
   </footer>
