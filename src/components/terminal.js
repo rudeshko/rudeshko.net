@@ -65,6 +65,7 @@ const Terminal = () => {
   };
 
   const controlFullScreen = async () => {
+    setMinimized(false);
     setFullScreen(!fullScreen);
   };
 
