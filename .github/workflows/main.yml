@@ -1,0 +1,14 @@
+name: rudeshko.net - CICD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+      - name: Test step
+        run: echo "Initial action"
