@@ -36,7 +36,7 @@
         }
 
         a {
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
           font-size: 14px;
           color: #222;
@@ -46,6 +46,42 @@
           &:hover {
             text-decoration: underline;
           }
+        }
+      }
+    }
+
+    .view_source {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .github_icon {
+        width: 16px;
+        height: 16px;
+        background: url("../images/github.png") no-repeat;
+        background-size: cover;
+        display: block;
+        margin-right: 7px;
+      }
+
+      a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: #222;
+        text-decoration: none;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.15);
+        line-height: 16px;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
     }

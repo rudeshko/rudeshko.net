@@ -26,6 +26,16 @@ const Footer = () => (
           </a>
         </li>
       </ul>
+      <div class="view_source">
+        <span class="github_icon"></span>
+        <a
+          href="https://github.com/rudeshko/rudeshko.net"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Source on GitHub
+        </a>
+      </div>
     </div>
   </footer>
 );
