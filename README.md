@@ -1,4 +1,4 @@
-# Public Repository for rudeshko.net Website
+# Public Repository for rudeshko.net
 
 ![rudeshko.net - CICD](https://github.com/rudeshko/rudeshko.net/workflows/rudeshko.net%20-%20CICD/badge.svg)
 

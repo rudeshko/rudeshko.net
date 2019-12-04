@@ -6,9 +6,13 @@ on:
       - master
 
 jobs:
-  build:
+  cicd:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
-      - name: Test step
-        run: echo "Initial action"
+      - name: Install NPM packages
+        run: npm install
+      - name: Build the project
+        run: npm run build
+      - name: Deploy to S3
+        run: npm run deploy
