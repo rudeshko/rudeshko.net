@@ -20,7 +20,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typed.js": "^2.0.11"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
@@ -36,7 +37,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby-plugin-s3 deploy --yes --silent"
+    "deploy": "gatsby-plugin-s3 deploy --yes"
   },
   "repository": {
     "type": "git",
