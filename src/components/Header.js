@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../sass/Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons";
