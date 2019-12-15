@@ -1,6 +1,8 @@
 import React from "react";
 
 import "../sass/Header.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => (
   <header id="header">
@@ -9,7 +11,8 @@ const Header = () => (
       <div className="profile_name">
         Dima Rudeshko
         <div className="subheading">
-          Full Stack Software Developer in Toronto, Canada
+          Full Stack Software Developer in Toronto, Canada{" "}
+          <FontAwesomeIcon icon={faCanadianMapleLeaf} />
         </div>
       </div>
     </div>

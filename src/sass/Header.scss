@@ -6,7 +6,7 @@
 
   width: 100%;
   height: $header-height;
-  background: url('../images/header_bg.jpg') no-repeat;
+  background: url("../images/header_bg.jpg") no-repeat;
   background-size: cover;
   background-position: top center;
   margin-bottom: $header-offset;
@@ -31,7 +31,7 @@
     .profile_picture {
       width: 200px;
       height: 200px;
-      background: url('../images/dima.png') no-repeat;
+      background: url("../images/dima.png") no-repeat;
       background-position: center;
       background-size: cover;
       border: 7px solid #fff;
@@ -74,6 +74,16 @@
         @include media($mobile-width) {
           padding: 0;
           margin-top: 5px;
+        }
+
+        svg {
+          font-size: 18px;
+          margin-bottom: -2px;
+          color: map-get($colorMap, "red");
+
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }
