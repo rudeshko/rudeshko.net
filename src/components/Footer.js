@@ -1,7 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import "../sass/footer.scss";
+import "../sass/Footer.scss";
 
+// TODO: Add Resume
 const Footer = () => (
   <footer id="footer">
     <div className="container">
@@ -13,6 +17,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FontAwesomeIcon icon={faLinkedin} />
             LinkedIn
           </a>
         </li>
@@ -22,17 +27,24 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FontAwesomeIcon icon={faGithub} />
             GitHub
           </a>
         </li>
+        {/* <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFilePdf} />
+            Resume
+          </a>
+        </li> */}
       </ul>
-      <div class="view_source">
-        <span class="github_icon"></span>
+      <div className="view_source">
         <a
           href="https://github.com/rudeshko/rudeshko.net"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <FontAwesomeIcon icon={faCode} />
           View Source on GitHub
         </a>
       </div>

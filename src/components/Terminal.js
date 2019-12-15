@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typed from "typed.js";
 
-import "../sass/terminal.scss";
+import "../sass/Terminal.scss";
 
 const Terminal = () => {
   const [step, setStep] = useState(0);
@@ -9,6 +9,7 @@ const Terminal = () => {
   const [loaded, setLoaded] = useState(false);
   const [minimized, setMinimized] = useState(false);
   const [fullScreen, setFullScreen] = useState(false);
+  // TODO: Doesn't need to be a hook, change this
   const [bio] = useState(`
     <span class="tab"></span>Hello, and welcome to my website! My name is Dima, and I am a Full Stack Software Developer with 12+ years of experience in computer programming.
     I am very passionate about web development and working with the latest and greatest technologies such as React, NodeJS, GraphQL, as well as cloud computing and architecture using Microservices and CICD pipelines.
