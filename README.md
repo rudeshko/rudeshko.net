@@ -24,14 +24,26 @@ npm start
 
 # Tools Used
 
-## CICD
+### CICD
 
-## Gatsby
+- GitHub Actions with hooks, set up to run on push to `master`
 
-## React
+### Gatsby
 
-## Font Awesome
+- https://www.gatsbyjs.com/
 
-## SASS
+### React
 
-## Helmet
+- https://reactjs.org/
+
+### Font Awesome
+
+- https://fontawesome.com/
+
+### SASS
+
+- https://sass-lang.com/
+
+### Helmet
+
+- https://www.npmjs.com/package/react-helmet
