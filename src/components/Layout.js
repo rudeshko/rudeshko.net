@@ -12,10 +12,14 @@ import Footer from "./Footer";
 
 import "../sass/Layout.scss";
 
-const Layout = ({ children }) => (
+const Layout = ({ className, children }) => (
   <div className="wrapper">
     <Header />
-    <main className="container main">{children}</main>
+    <main
+      className={["container", className ? className : ""].join(" ")}
+    >
+      {children}
+    </main>
     <Footer />
   </div>
 );

@@ -10,7 +10,9 @@
   display: flex;
   flex-direction: column;
   opacity: 0;
-  @include transition(#{'transform 0.5s ease-in-out, opacity 0.5s ease-in-out'});
+  @include transition(
+    #{"transform 0.5s ease-in-out, opacity 0.5s ease-in-out"}
+  );
   @include transform(scale(0.8));
   @include border-radius(7px);
   @include box-shadow(0 3px 25px rgba(255, 255, 255, 0.25));
@@ -34,6 +36,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 100;
     @include transition(all 0s);
     @include border-radius(0);
   }
@@ -72,7 +75,7 @@
       font-size: 13px;
       text-align: center;
       flex-grow: 1;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
       padding-right: 70px;
     }
@@ -83,7 +86,7 @@
     font-size: 15px;
     color: #fff;
     line-height: 24px;
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     font-weight: 400;
     overflow: auto;
     flex: 1;

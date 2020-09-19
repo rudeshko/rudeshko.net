@@ -9,7 +9,7 @@ import "../sass/index.scss";
 config.autoAddCss = false;
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className="main">
     <SEO title="Home" />
     <Terminal />
   </Layout>

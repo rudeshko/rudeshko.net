@@ -11,6 +11,12 @@ const Footer = () => (
     <div className="container">
       <hr />
       <ul>
+        {/* <li>
+          <a href="/portfolio" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faSuitcase} />
+            Portfolio
+          </a>
+        </li> */}
         <li>
           <a
             href="https://www.linkedin.com/in/dimarudeshko/"

@@ -32,6 +32,20 @@ body {
   }
 }
 
+.portfolio {
+  margin-top: 90px;
+  padding: 12px 10px;
+  background: #333;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  @include border-radius(7px);
+  @include box-shadow(0 3px 25px rgba(255, 255, 255, 0.25));
+
+  @include media($mobile-width) {
+    margin-top: 30px;
+  }
+}
+
 //TODO: Move to portfolio.scss
 // .title {
 //   font-family: 'Montserrat', sans-serif;

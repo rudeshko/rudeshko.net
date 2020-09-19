@@ -4,23 +4,28 @@ import Typed from "typed.js";
 import "../sass/Terminal.scss";
 
 const Terminal = () => {
+  const bio = `
+    <span class="tab"></span>Hello, and welcome to my website! My name is Dima, and I am a Full Stack Software Developer with 12+ years of experience in computer programming.
+    I am very passionate about web development and working with the latest and greatest technologies such as React, NodeJS, GraphQL, as well as cloud computing and architecture using Microservices and CICD pipelines.
+    <br />
+    <span class="tab"></span>You can see my work by visiting my portfolio page below, and feel free to <a href="mailto:dima@rudeshko.net">get in touch!</a> with me :)
+    <br />
+    <br />
+    <span class="tab"></span>&ndash; Dima
+  `;
+
+  /**
+   * Hooks
+   */
   const [step, setStep] = useState(0);
   const [isTyping, setIsTyping] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [minimized, setMinimized] = useState(false);
   const [fullScreen, setFullScreen] = useState(false);
-  // TODO: Doesn't need to be a hook, change this
-  const [bio] = useState(`
-    <span class="tab"></span>Hello, and welcome to my website! My name is Dima, and I am a Full Stack Software Developer with 12+ years of experience in computer programming.
-    I am very passionate about web development and working with the latest and greatest technologies such as React, NodeJS, GraphQL, as well as cloud computing and architecture using Microservices and CICD pipelines.
-    <br />
-    <span class="tab"></span>If you like what I do, you can learn more about me by visiting the links below, or <a href="mailto:dima@rudeshko.net">send me an email!</a> :)
-    <br />
-    <br />
-    <span class="tab"></span>&ndash; Dima
-  `);
 
-  // Methods TODO: Add comments (jsdoc)
+  /**
+   * Methods
+   */
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
   const hideCursor = () => {

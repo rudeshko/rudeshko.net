@@ -11,7 +11,7 @@ const Header = () => (
         Dima Rudeshko
         <div className="subheading">
           Full Stack Software Developer in Toronto, Canada{" "}
-          <FontAwesomeIcon icon={faCanadianMapleLeaf} />
+          <FontAwesomeIcon icon={faCanadianMapleLeaf} title="Oh Canada!" />
         </div>
       </div>
     </div>
