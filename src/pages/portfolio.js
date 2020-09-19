@@ -6,7 +6,7 @@ const IndexPage = () => (
   <Layout className="portfolio">
     <SEO title="Portfolio" />
     <h1 className="title">
-      Porfolio
+      Portfolio
       <div className="subheading">
         Some of the projects from my career, as well as my hobbies
       </div>
