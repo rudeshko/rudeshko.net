@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Dima Rudeshko`,
     description: `rudeshko.net`,
-    author: `@rudeshko`,
+    author: `dima@rudeshko.net`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#ffc600`,
         theme_color: `#ffc600`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-sass`,
