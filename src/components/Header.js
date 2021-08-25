@@ -10,7 +10,7 @@ const Header = () => (
       <div className="profile_name">
         Dima Rudeshko
         <div className="subheading">
-          Full Stack Software Developer in Toronto, Canada{" "}
+          Software Development Manager in Toronto, Canada{" "}
           <FontAwesomeIcon icon={faCanadianMapleLeaf} title="Oh Canada!" />
         </div>
       </div>

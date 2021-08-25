@@ -11,12 +11,6 @@ const Footer = () => (
     <div className="container">
       <hr />
       <ul>
-        {/* <li>
-          <a href="/portfolio" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faSuitcase} />
-            Portfolio
-          </a>
-        </li> */}
         <li>
           <a
             href="https://www.linkedin.com/in/dimarudeshko/"
@@ -37,12 +31,6 @@ const Footer = () => (
             GitHub
           </a>
         </li>
-        {/* <li>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFilePdf} />
-            Resume
-          </a>
-        </li> */}
       </ul>
       <div className="view_source">
         <a
@@ -51,7 +39,7 @@ const Footer = () => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faCode} />
-          View Source on GitHub
+          rudeshko.net Source on GitHub
         </a>
       </div>
     </div>

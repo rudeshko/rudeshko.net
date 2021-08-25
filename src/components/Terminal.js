@@ -5,10 +5,10 @@ import "../sass/Terminal.scss";
 
 const Terminal = () => {
   const bio = `
-    <span class="tab"></span>Hello, and welcome to my website! My name is Dima, and I am a Full Stack Software Developer with 12+ years of experience in computer programming.
+    <span class="tab"></span>Hello, and welcome to my website! My name is Dima, and I am a Software Development Manager of a Full Stack team with 12+ years of experience in computer programming.
     I am very passionate about web development and working with the latest and greatest technologies such as React, NodeJS, GraphQL, as well as cloud computing and architecture using Microservices and CICD pipelines.
     <br />
-    <span class="tab"></span>You can see my work by visiting my portfolio page below, and feel free to <a href="mailto:dima@rudeshko.net">get in touch!</a> with me :)
+    <span class="tab"></span>You can see my information by visiting the social links below, and feel free to <a href="mailto:dima@rudeshko.net">get in touch!</a> with me :)
     <br />
     <br />
     <span class="tab"></span>&ndash; Dima
